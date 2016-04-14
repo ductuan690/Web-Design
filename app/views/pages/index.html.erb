@@ -1,7 +1,18 @@
 <header>
-  <div class="hero-text-box">
-    <h1>Goodbye junk food.<br> Hello super healthy meals.</h1>
-    <%= link_to 'I’m hungry', '#', class: "btn btn-hungry" %>
-    <%= link_to 'Show me more', '#', class: "btn btn-more" %>
-  </div>
+    <nav>
+        <div class="row">
+            <%= image_tag 'logo.png', alt:"Omnifood logo", class: "logo" %>
+            <ul class="ul-nav">
+                <li><%= link_to 'Food Delivery', '#' %></li>
+                <li><%= link_to 'How It Works', '#' %></li>
+                <li><%= link_to 'Our Cites', '#' %></li>
+                <li><%= link_to 'Sign Up', '#' %></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero-text-box">
+        <h1>Goodbye junk food.<br> Hello super healthy meals.</h1>
+        <%= link_to 'I’m hungry', '#', class: "btn btn-hungry" %>
+        <%= link_to 'Show me more', '#', class: "btn btn-more" %>
+    </div>
 </header>
