@@ -1,0 +1,79 @@
+/** {*/
+/*  margin: 0;*/
+/*  padding: 0;*/
+/*   border: 1px solid red; */
+/*   box-sizing: border-box; */
+/*}*/
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Index Template */
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  font-weight: 300;
+  font-size: 250%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn:link,
+.btn:visited {
+  margin: 10px 5px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 300;
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-hungry {
+  background-color: #e67e22;
+  color: #fff;
+  border: 1px solid #cf6d17;
+}
+
+.btn-more {
+  border: 1px solid #cf6d17;
+  color: #ff6a07;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #cf6d17;
+}
+
+.btn-more:hover,
+.btn-more:active {
+  color: #fff;
+}
