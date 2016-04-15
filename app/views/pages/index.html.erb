@@ -16,3 +16,119 @@
         <%= link_to 'Show me more', '#', class: "btn btn-more" %>
     </div>
 </header>
+<section class="section-features">
+    <div class="row">
+        <h2>Get food fast &ndash; not fast food</h2>
+        <p class="content-introduction">
+            Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise
+        </p>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-4 col-box">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <h3>Up to 365 days/year</h3>
+            <p>
+                Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
+            </p>
+        </div>
+        <div class="col span-1-of-4 col-box">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <h3>Ready in 20 minutes</h3>
+            <p>
+                You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+            </p>
+        </div>
+        <div class="col span-1-of-4 col-box">
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+            <h3>100% organic</h3>
+            <p>
+                All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!
+            </p>
+        </div>
+        <div class="col span-1-of-4 col-box">
+            <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+            <h3>Order anything</h3>
+            <p>
+                We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
+            </p>
+        </div>
+    </div>
+</section>
+<section class="section-meals">
+    <ul class="ul-meals clearfix">
+        <li>
+            <figure class="figure-meals">
+                <%= image_tag '1.jpg', alt: "Korean bibimbap with egg and vegetables" %>
+            </figure>
+        </li>
+        <li>
+            <figure class="figure-meals">
+                <%= image_tag '2.jpg', alt: "Simple italian pizza with cherry tomatoes" %>
+            </figure>
+        </li>
+        <li>
+            <figure class="figure-meals">
+                <%= image_tag '3.jpg', alt: "Chicken breast steak with vegetables" %>
+            </figure>
+        </li>
+        <li>
+            <figure class="figure-meals">
+                <%= image_tag '4.jpg', alt: "Autumn pumpkin soup" %>
+            </figure>
+        </li>
+    </ul>
+    <ul class="ul-meals clearfix">
+        <li>
+            <figure class="figure-meals">
+                <%= image_tag '5.jpg', alt: "Paleo beef steak with vegetables" %>
+            </figure>
+        </li>
+        <li>
+            <figure class="figure-meals">
+                <%= image_tag '6.jpg', alt: "Healthy baguette with egg and vegetables" %>
+            </figure>
+        </li>
+        <li>
+            <figure class="figure-meals">
+                <%= image_tag '7.jpg', alt: "Burger with cheddar and bacon" %>
+            </figure>
+        </li>
+        <li>
+            <figure class="figure-meals">
+                <%= image_tag '8.jpg', alt: "Granola with cherries and strawberries" %>
+            </figure>
+        </li>
+    </ul>
+</section>
+<section class="section-steps">
+    <div class="row">
+        <div class="title-steps">
+            <h2>How it works &ndash; Simple as 1, 2, 3</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col span-1-of-2 col-steps-box">
+            <%= image_tag 'app-iPhone.png', alt: "Omnifood app on iPhone", class: "app-iphone" %>
+        </div>
+        <div class="col span-1-of-2">
+            <div class="works-steps">
+                <div class="step">
+                    <h4>1</h4>
+                    <p>Choose the subscription plan that best fits your needs and sign up today</p>
+                </div>
+                <div class="step">
+                    <h4>2</h4>
+                    <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+                </div>
+                <div class="step">
+                    <h4>3</h4>
+                    <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+                </div>
+            </div>
+            <div class="app-images">
+                <%= link_to (image_tag 'download-app.svg', alt: "App Store Button"), '#'  %>
+                <%= link_to (image_tag 'download-app-android.png', alt: "Play Store Button"), '#'  %>
+            </div>
+        </div>
+    </div>
+</section>

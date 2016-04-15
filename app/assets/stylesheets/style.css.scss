@@ -21,7 +21,24 @@ html {
   margin: 0 auto;
 }
 
+section {
+  padding: 80px 0;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /* Index Template */
+
+/*---------------------------------*/
+/*-------------HEADERS----------*/
+/*---------------------------------*/
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), asset-url('hero.jpg');
@@ -30,13 +47,17 @@ header {
   height: 100vh;
 }
 
-h1 {
-  margin: 0;
-  color: #fff;
+h1, h2 , h3 {
   font-weight: 300;
-  font-size: 250%;
   text-transform: uppercase;
   letter-spacing: 1px;
+  
+}
+
+h1 {
+  margin: 0;
+  color: #fff; 
+  font-size: 250%;
   word-spacing: 3px;
 }
 
@@ -113,3 +134,138 @@ h1 {
     border-bottom: 2px solid #cf6d17;
     transition: border-bottom 0.2s;
 }
+
+/*---------------------------------*/
+/*-------------SECTION FEATURES----------*/
+/*---------------------------------*/
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2:after {
+  content: " ";
+  background-color: #cf6d17;
+  display: block;
+  height: 2px;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 110%;
+  padding: 1px; 
+  margin-bottom: 15px;
+}
+
+.content-introduction {
+  text-align: center;
+  line-height: 145%;
+  margin-bottom: 30px;
+}
+
+.col-box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+.col-box i {
+  font-size: 350%;
+  display: block;
+  margin-bottom: 20px;
+  color: #cf6d17;
+  // text-align: center;
+}
+
+/*---------------------------------*/
+/*-------------SECTION MEALS----------*/
+/*---------------------------------*/
+
+.section-meals {
+  padding: 0;
+}
+
+.ul-meals {
+  list-style: none;
+  width: 100%;
+}
+
+.ul-meals li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.figure-meals {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.figure-meals img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.figure-meals img:hover,
+.figure-meals img:active {
+  opacity: 1;
+  transform: scale(1.07);
+}
+
+/*---------------------------------*/
+/*-------------SECTION HOW IT WORKS----------*/
+/*---------------------------------*/
+
+.section-steps {
+  background-color: #E8E8E8;
+}
+
+.works-steps, .col-steps-box {
+  margin-top: 30px;
+}
+
+.works-steps {
+  margin-top: 70px;
+}
+
+.col-steps-box {
+  text-align: right;
+}
+
+.works-steps, .app-images {
+  padding-left: 5%;
+}
+
+.app-iphone {
+  width: 40%;
+  padding-right: 5%;
+}
+
+.step {
+  margin-bottom: 50px;
+}
+
+.step h4 {
+  color: #cf6d17;
+  border: 1px solid #cf6d17;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 150%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  float: left;
+  font-weight: normal;
+  margin-right: 25px;
+}
+
