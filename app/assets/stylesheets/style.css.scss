@@ -34,6 +34,10 @@ section {
   visibility: hidden;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 /* Index Template */
 
 /*---------------------------------*/
@@ -48,7 +52,7 @@ header {
   height: 100vh;
 }
 
-h1, h2 , h3 {
+h1, h2 , h3, h4, h5, h6 {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -381,4 +385,134 @@ h3 {
   left: 85px;
   font-weight: 300;
   font-size: 100%;
+}
+
+/*---------------------------------*/
+/*-------------SECTION PLANS----------*/
+/*---------------------------------*/
+
+.section-plans {
+  background-color: #F1EBEB;
+}
+
+.plan {
+  background-color: #fff;
+  height: 100%;
+}
+
+.plan-kind h5 {
+  font-size: 100%;
+  margin: 10px;
+}
+
+.plan-kind {
+  padding-top: 1px;
+  padding-bottom: 15px;
+  background-color: #EFEFEF;;
+}
+
+.plan-kind p {
+  font-size: 85%;
+  font-weight: 300;
+  margin: 0 15px;
+}
+
+.plan-money h1 {
+  color: #cf6d17;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+
+.plan-money span {
+  color: #cf6d17;
+  font-size: 100%;
+  font-weight: 300;
+}
+
+.plan-money {
+  margin: 10px 15px;
+}
+
+.plan-details {
+  margin: 10px 0;
+}
+
+.plan-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-details >ul >li {
+  margin: 5px 0;
+}
+
+.plan-details >ul >li i {
+  color: #cf6d17;
+  opacity: 0.5;
+  font-size: 75%;
+  margin: 0 10px;
+}
+
+.plan-btn {
+  color: #fff;
+  background-color: #e67e22;
+  border: 1px solid #cf6d17;
+}
+
+.plan-box {
+  text-align: center;
+  border-top: 1px solid #F5E7E7;
+  margin-top: 20px;
+  padding: 5px 0;
+}
+
+.plan-none-btn:link,
+.plan-none-btn:visited {
+  border: 1px solid #cf6d17;
+  color: #cf6d17;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.plan-none-btn:hover,
+.plan-none-btn:active {
+  color: #fff;
+}
+
+/*---------------------------------*/
+/*-------------SECTION CONTACT----------*/
+/*---------------------------------*/
+
+#contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+textarea,
+select {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.send-btn {
+  padding: 7px 20px;
+  background-color: #e67e22;
+  color: #fff;
+  border-radius: 50px;
+  border: 1px solid #cf6d17;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+label[for=news] {
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  margin: 13px 0;
 }

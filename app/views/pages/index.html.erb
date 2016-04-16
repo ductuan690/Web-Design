@@ -220,3 +220,139 @@
         </div>
     </div>
 </section>
+<section class="section-plans">
+    <div class="row">
+        <div class="plans-title">
+            <h2>Start eating healthy today</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="plans">
+            <div class="col span-1-of-3 plan">
+                <div class="plan-kind">
+                    <h5>premium</h5>
+                    <div class="clearfix plan-money">
+                        <h1>$399</h1>
+                        <span>/ month</span>
+                    </div>
+                    <p>That’s only 13.30$ per meal</p>
+                </div>
+                <div class="plan-details">
+                    <ul>
+                        <li><i class="fa fa-check"></i>1 meal every day</li>
+                        <li><i class="fa fa-check"></i>Order 24/7</li>
+                        <li><i class="fa fa-check"></i>Access to newest creations</li>
+                        <li><i class="fa fa-check"></i>Free delivery</li>
+                    </ul>
+                </div>
+                <div class="plan-box">
+                    <%= link_to 'Sign up now', '#', class: 'btn plan-btn' %>
+                </div>
+            </div>
+            <div class="col span-1-of-3 plan">
+                <div class="plan-kind">
+                    <h5>pro</h5>
+                    <div class="clearfix plan-money">
+                        <h1>149$</h1>
+                        <span>/ month</span>
+                    </div>
+                    <p>That’s only 14.90$ per meal</p>
+                </div>
+                <div class="plan-details">
+                    <ul>
+                        <li><i class="fa fa-check"></i>1 meal 10 days/month</li>
+                        <li><i class="fa fa-check"></i>Order 24/7</li>
+                        <li><i class="fa fa-check"></i>Access to newest creations</li>
+                        <li><i class="fa fa-check"></i>Free delivery</li>
+                    </ul>
+                </div>
+                <div class="plan-box">
+                    <%= link_to 'Sign up now', '#', class: 'btn plan-none-btn' %>
+                </div>
+            </div><div class="col span-1-of-3 plan">
+                <div class="plan-kind">
+                    <h5>starter</h5>
+                    <div class="clearfix plan-money">
+                        <h1>19$</h1>
+                        <span>/ meal</span>
+                    </div>
+                    <p class="hidden">none</p>
+                </div>
+                <div class="plan-details">
+                    <ul>
+                        <li><i class="fa fa-check"></i>1 meal</li>
+                        <li><i class="fa fa-check"></i>Order from 8 am to 12 pm</li>
+                        <li><i class="fa fa-close"></i></li>
+                        <li><i class="fa fa-check"></i>Free delivery</li>
+                    </ul>
+                </div>
+                <div class="plan-box">
+                    <%= link_to 'Sign up now', '#', class: 'btn plan-none-btn' %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-form">
+    <div class="row">
+        <div class="form-title">
+            <h2>We're happy to hear from you</h2>
+        </div>
+    </div>
+    <div class="row">
+    <%= form_for(:object, :html => { class: "class-horizontal", role: "form", id: "contact-form" }) do |f| %>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <%= f.label :name %>
+            </div>
+            <div class="col span-2-of-3">
+                <%= f.text_field :name, placeholder: "Your name", :required => true %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <%= f.label :email %>
+            </div>
+            <div class="col span-2-of-3">
+                <%= f.email_field :email, placeholder: "Your email", :required => true %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <%= f.label :how_did_you_find_us_? %>
+            </div>
+            <div class="col span-2-of-3">
+                <%= select_tag(:findus, options_for_select([['Friends', 'friends'], 
+                                                            ['Search engine', 'search'],
+                                                            ['Avertisement', 'ad'],
+                                                            ['Other', 'ot']])) %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <%= f.label :newsletter? %>
+            </div>
+            <div class="col span-2-of-3">
+                <%= check_box_tag(:news) %>
+                <%= label_tag(:news, 'Yes, please') %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <%= f.label :drop_us_a_line %>
+            </div>
+            <div class="col span-2-of-3">
+                <%= f.text_area :messages, rows: 5, cols: 30, placeholder: "Your messages" %>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <%= f.label :send, class: "hidden" %>
+            </div>
+            <div class="col span-2-of-3">
+                <%= f.submit 'Send it', class: "btn send-btn" %>
+            </div>
+        </div>
+    <% end %>
+    </div>
+</section>
