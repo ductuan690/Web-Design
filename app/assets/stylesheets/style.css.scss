@@ -44,6 +44,7 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), asset-url('hero.jpg');
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -331,4 +332,53 @@ h3 {
 .city-features a:hover,
 .city-features a:active {
   font-size: 120%;
+}
+
+/*---------------------------------*/
+/*-------------SECTION TESTIMONIALS----------*/
+/*---------------------------------*/
+
+.section-testimonials {
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0 ,0 , 0.7), rgba(0, 0 ,0 , 0.7)), asset-url('back-customers.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.customer {
+  margin-bottom: 20px;
+}
+
+.customer i {
+  font-size: 150%;
+  margin: 10px 0;
+}
+
+.customer p {
+  font-style: italic;
+  padding-right: 10px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  word-spacing: 3px;
+  line-height: 145%;
+}
+
+.customer-detail {
+  position: relative;
+}
+
+.customer-detail img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.customer-detail h5 {
+  display: inline-block;
+  position: absolute;
+  top: 32%;
+  left: 85px;
+  font-weight: 300;
+  font-size: 100%;
 }
