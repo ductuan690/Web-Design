@@ -516,3 +516,91 @@ label[for=news] {
 input[type=checkbox] {
   margin: 13px 0;
 }
+
+/*---------------------------------*/
+/*-------------SECTION FOOTER----------*/
+/*---------------------------------*/
+
+footer {
+  background-color: #232121;
+  color: #6D6868;
+  padding-bottom: 60px;
+}
+
+.footer-nav ul, 
+.footer-socials ul {
+  list-style: none;
+  margin: 45px 0 20px 0;
+}
+
+.footer-nav ul {
+  float: left;
+}
+
+.footer-socials ul {
+  float: right
+}
+
+.footer-nav >ul li, 
+.footer-socials >ul li {
+  display: inline;
+  margin: 0 3px;
+}
+
+.footer-nav >ul li {
+  margin: 0 10px;
+}
+
+.footer-nav >ul >li a:link, 
+.footer-nav >ul >li a:visited {
+  text-decoration: none;
+  color: #6D6868;
+  transition: color 0.2s;
+  font-size: 100%;
+}
+
+.footer-nav >ul >li a:hover, 
+.footer-nav >ul >li a:active {
+  color: #a09b9b;
+} 
+
+.fa-facebook,
+.fa-twitter,
+.fa-google-plus,
+.fa-instagram {
+  color: #6D6868;
+  text-decoration: none;
+  font-size: 120%;
+  transition: color 0.2s;
+}
+
+.fa-facebook:hover,
+.fa-facebook:active {
+  color: #3b5998;
+}
+
+.fa-twitter:hover,
+.fa-twitter:active {
+  color: #55acee;
+}
+
+.fa-google-plus:hover,
+.fa-google-plus:active {
+  color: #dd4b39;
+}
+
+.fa-instagram:hover,
+.fa-instagram:active {
+  color: #125688;
+}
+
+
+.admire-review p {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.admire-review p:last-child {
+  margin-top: 20px;
+}
