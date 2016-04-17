@@ -52,6 +52,14 @@ header {
   height: 100vh;
 }
 
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 h1, h2 , h3, h4, h5, h6 {
   font-weight: 300;
   text-transform: uppercase;
@@ -64,14 +72,6 @@ h1 {
   color: #fff; 
   font-size: 250%;
   word-spacing: 3px;
-}
-
-.hero-text-box {
-  position: absolute;
-  width: 1140px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .btn:link,
@@ -313,7 +313,7 @@ h3 {
 
 .city-features i {
   color: #cf6d17;
-  margin: 10px 10px;
+  margin: 10px;
   
   /* ssecrets to text= and icon */
   // line-height: 120%;
