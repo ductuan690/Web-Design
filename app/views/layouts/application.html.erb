@@ -4,17 +4,25 @@
   <title>Omnifood</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <%= stylesheet_link_tag 'normalize', 'grid' %>
+  <%= stylesheet_link_tag 'normalize', 'grid', 'animate' %>
   <%= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' %>
   <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Lato:400,100,300italic,300' %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
+
+<%= javascript_include_tag "https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js" %>
+<%= javascript_include_tag "https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js" %>
+<%= javascript_include_tag "https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js" %>
+<%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" %>
+<%= javascript_include_tag "jquery.waypoints" %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
 
 </body>
 </html>
