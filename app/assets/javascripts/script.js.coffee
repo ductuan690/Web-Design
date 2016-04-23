@@ -73,3 +73,12 @@ $('.mobile-nav').click ->
     $('.mobile-nav').addClass 'fa-bars'
     $('.mobile-nav').removeClass 'fa-remove'
   return
+
+
+$(window).resize ->
+  nav = $('.ul-nav')
+  if $(window).width() > 767
+    nav.css 'display', 'block'
+  else
+    nav.css 'display', 'none'
+  return
