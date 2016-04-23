@@ -1,0 +1,27 @@
+@mixin background-picture {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@mixin button-normal {
+  border: 1px solid $main-color;
+  color: $main-color;
+  transition: color 0.5s, background-color 0.5s;
+  
+  &:hover, &:active {
+    color: #fff;
+  }
+}
+
+@mixin button-hot {
+  background-color: #e67e22;
+  color: #fff;
+  border: 1px solid $main-color;
+}
+
+@mixin hover-color($color) {
+  &:hover, &:active {
+    color: $color;
+  }
+}

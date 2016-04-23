@@ -1,0 +1,177 @@
+/*Medium laptops to large laptops: 1025px to 1440px */
+@media only screen and (max-width: 1440px) {
+  /* SECTION-HEADER */
+  .hero-text-box {
+    width: 100%;
+    transform: none;
+    position: static;
+    margin-top: 5%;
+  }
+  .row { padding: 0 2%; }
+  /* SECTION-WORKS */
+  .city-features a:link:hover, .city-features :active { font-size: 110%; }
+  /* SECTION-CONTACTS */
+  #contact-form { width: 80%; }
+}
+
+
+/* Small laptops to medium laptops: 769px to 1024px */
+@media only screen and (max-width: 1024px) {
+  html { font-size: 17px; }
+  section { padding: 60px 0; }
+  /* SECTION-HEADER */
+  .sticky .ul-nav li a:link, .sticky .ul-nav li a:visited { padding: 16px 15px; }
+  /* SECTION-FEATURES */
+  .col-box h3 { font-size: 87%; }
+  /* SECTION-HOW-IT-WORKS */
+  .step { 
+    margin-bottom: 10%; 
+    
+    h4 { 
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .works-steps { margin-top: 50px; }
+  .app-iphone { width: 190px; }
+  .app-images {
+    margin-top: 64px;
+    
+    >a img {
+      height: 45px;
+    }
+  }
+  /* SECTION-CITIES */
+  .city-features {
+    font-size: 94%;
+    
+    a:link, a:visited {
+      margin: 1%;
+      
+      &:hover, &:active {
+        font-size: 101.5%;
+      }
+    }
+  }
+  /* SECTION-TESTIMONIALS */
+  .customer-detail {
+    font-size: 90%;
+    
+    img {
+      width: 25%;
+      height: auto;
+    }
+  }
+  /* SECTION-PLANS */
+  .plan-details > ul > li { font-size: 93%; }
+  #contact-form { width: 90%; }
+  /* SECTION-FOOTER */
+  .footer-nav > ul li { margin: 0 4px; }
+}
+
+/* Small tablets to large tablets: 426px to 768px */
+@media only screen and (max-width: 768px) {
+  body { font-size: 16px; }
+  section { padding: 30px 0; }
+  .row { padding: 0 4%; }
+  .col {
+    width: 100%;
+    margin: 0 0 4% 0;
+  }
+  h1 { font-size: 200%; }
+  h2 { font-size: 160%; }
+  /* SECTION-HEADER */
+  .ul-nav {
+    float: left;
+    margin: 28px 15px;
+    display: none;
+    
+    li {
+      display: block;
+      margin-bottom: 3px;
+      
+      a:link, a:visited {
+        padding: 0 5px;
+        
+        &:hover, &:active { padding-bottom: 1px; }
+      }
+    }
+  }
+  .sticky .ul-nav { float: left; }
+  .sticky .ul-nav li a:link, .sticky .ul-nav li a:visited {
+    padding: 1px 5px;
+    margin-left: 10px;
+  }
+  .mobile-nav { display: block; }
+  .sticky .mobile-nav { margin-top: 13px; }
+  .hero-text-box { margin-top: 30px; }
+  /* SECTION-FEATURES */
+  .col-box p { font-size: 100%; }
+  .col-box h3 { font-size: 100%; }
+  /* SECTION-HOW-IT-WORKS */
+  .app-iphone { padding-right: 0; }
+  .col-steps-box { text-align: center; }
+  .works-steps { margin-top: 30px; }
+  .step {
+    margin-bottom: 7%;
+    
+    h4 {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  /* SECTION-CITIES */
+  .city-features i { margin: 2%; }
+  .city-features {
+    font-size: 100%;
+    
+    i { margin: 2%; }
+  }
+  .city-features {
+    a:link, a:visited {
+      &:hover, &:active { font-size: 120%; }
+    }
+  }
+  /* SECTION-CONTACT */
+  .customer-detail img { width: 70px; }
+  /* SECTION-PLANS */
+  .plan-details > ul > li { font-size: 100%; }
+  /* SECTION-FOOTER */
+  .footer-nav ul {
+    width: 100%;
+    margin: 25px auto;
+    text-align: center;
+  }
+  .footer-socials ul {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Medium mobiles to large mobiles: from 376 to 425px */
+@media only screen and (max-width: 425px) {
+  section { padding: 25px 0; }
+  /* SECTION-HEADER */
+  .sticky .ul-nav li a:link, .sticky .ul-nav li a:visited {
+    padding: 1px 5px;
+    margin-left: 10px;
+  }
+  .logo { height: 70px; }
+  h1 {
+    font-size: 170%;
+    margin-bottom: 20px;
+  }
+  .btn:link, .btn:visited { font-size: 80%; }
+  .mobile-nav { margin-top: 40px; }
+  /* SECTION-HOW-IT-WORKS */
+  .step { margin-bottom: 15%; }
+}
+
+/* Small mobiles to medium mobiles: from 376 to 425px */
+@media only screen and (max-width: 375px) {
+  /* SECTION-HEADER */
+  h1 { font-size: 140%; }
+  .btn:link, .btn:visited { font-size: 70%; }
+}

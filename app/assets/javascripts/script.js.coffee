@@ -1,3 +1,19 @@
+# Scrolling navigation
+$ ->
+  $('a[href*="#"]:not([href="#"])').click ->
+    if location.pathname.replace(/^\//, '') == @pathname.replace(/^\//, '') and location.hostname == @hostname
+      target = $(@hash)
+      target = if target.length then target else $('[name=' + @hash.slice(1) + ']')
+      if target.length
+        $('html, body').animate { scrollTop: target.offset().top }, 1000
+        return false
+    return
+  return
+  
+# =========================
+# ========HEADERS==========
+# =========================
+
 # Sticky for navigation
 waypoint = new Waypoint(
   element: document.getElementsByClassName('js--section-features')
@@ -17,48 +33,7 @@ $('.js--btn-to-plans').click ->
 $('.js--btn-to-start').click ->
   $('html, body').animate { scrollTop: $('.js--section-features').offset().top }, 1000
   return
-  
-# Scrolling navigation
-$ ->
-  $('a[href*="#"]:not([href="#"])').click ->
-    if location.pathname.replace(/^\//, '') == @pathname.replace(/^\//, '') and location.hostname == @hostname
-      target = $(@hash)
-      target = if target.length then target else $('[name=' + @hash.slice(1) + ']')
-      if target.length
-        $('html, body').animate { scrollTop: target.offset().top }, 1000
-        return false
-    return
-  return
-  
-# Some Animation
-waypoint = new Waypoint(
-  element: document.getElementsByClassName('js--wp-features')
-  handler: (direction) ->
-    $('.js--wp-features').addClass 'animated bounceInDown'
-    return
-  offset: '50%')
-  
-waypoint = new Waypoint(
-  element: document.getElementsByClassName('js--wp-phone')
-  handler: (direction) ->
-    $('.js--wp-phone').addClass 'animated bounceInLeft'
-    return
-  offset: '50%')
-  
-waypoint = new Waypoint(
-  element: document.getElementsByClassName('js--wp-cities')
-  handler: (direction) ->
-    $('.js--wp-cities').addClass 'animated zoomInUp'
-    return
-  offset: '50%')
-  
-waypoint = new Waypoint(
-  element: document.getElementsByClassName('js--wp-plans')
-  handler: (direction) ->
-    $('.js--wp-plans').addClass 'animated rotateIn'
-    return
-  offset: '50%')
-  
+
 # Mobile Navigation
 $('.mobile-nav').click ->
   icon = $('.js--nav-icon i')
@@ -79,6 +54,56 @@ $(window).resize ->
   nav = $('.ul-nav')
   if $(window).width() > 767
     nav.css 'display', 'block'
+    $('.mobile-nav').addClass 'fa-bars' 
+    $('.mobile-nav').removeClass 'fa-remove'
   else
     nav.css 'display', 'none'
+    $('.mobile-nav').addClass 'fa-bars'
+    $('.mobile-nav').removeClass 'fa-remove'
   return
+  
+# =========================
+# ========SECTION FEATURES==========
+# =========================
+  
+# Some Animation
+waypoint = new Waypoint(
+  element: document.getElementsByClassName('js--wp-features')
+  handler: (direction) ->
+    $('.js--wp-features').addClass 'animated bounceInDown'
+    return
+  offset: '50%')
+
+# =========================
+# ========SECTION STEPS==========
+# =========================
+  
+waypoint = new Waypoint(
+  element: document.getElementsByClassName('js--wp-phone')
+  handler: (direction) ->
+    $('.js--wp-phone').addClass 'animated bounceInLeft'
+    return
+  offset: '50%')
+  
+# =========================
+# ========SECTION CITIES==========
+# =========================
+  
+waypoint = new Waypoint(
+  element: document.getElementsByClassName('js--wp-cities')
+  handler: (direction) ->
+    $('.js--wp-cities').addClass 'animated zoomInUp'
+    return
+  offset: '50%')
+  
+# =========================
+# ========SECTION PLANS==========
+# =========================
+  
+waypoint = new Waypoint(
+  element: document.getElementsByClassName('js--wp-plans')
+  handler: (direction) ->
+    $('.js--wp-plans').addClass 'animated rotateIn'
+    return
+  offset: '50%')
+  
