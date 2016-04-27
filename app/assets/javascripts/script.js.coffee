@@ -25,6 +25,53 @@ waypoint = new Waypoint(
     return
   offset: '90%')
 
+# Underline automatic for navigation
+waypoint = new Waypoint(
+  element: document.getElementsByClassName('js--section-features')
+  handler: (direction) ->
+    if direction == 'down'
+      $('a[href="#features"]').addClass 'nav-underline'
+    else
+      $('a[href="#features"]').removeClass 'nav-underline'
+    return
+  offset: '10%')
+  
+waypoint = new Waypoint(
+  element: document.getElementsByClassName('js--section-works')
+  handler: (direction) ->
+    if direction == 'down'
+      $('a[href="#works"]').addClass 'nav-underline'
+      $('a[href="#features"]').removeClass 'nav-underline'
+    else
+      $('a[href="#works"]').removeClass 'nav-underline'
+      $('a[href="#features"]').addClass 'nav-underline'
+    return
+  offset: '10%')
+  
+waypoint = new Waypoint(
+  element: document.getElementsByClassName('js--section-cities')
+  handler: (direction) ->
+    if direction == 'down'
+      $('a[href="#cities"]').addClass 'nav-underline'
+      $('a[href="#works"]').removeClass 'nav-underline'
+    else
+      $('a[href="#cities"]').removeClass 'nav-underline'
+      $('a[href="#works"]').addClass 'nav-underline'
+    return
+  offset: '10%')
+  
+waypoint = new Waypoint(
+  element: document.getElementsByClassName('js--section-plans')
+  handler: (direction) ->
+    if direction == 'down'
+      $('a[href="#plans"]').addClass 'nav-underline'
+      $('a[href="#cities"]').removeClass 'nav-underline'
+    else
+      $('a[href="#plans"]').removeClass 'nav-underline'
+      $('a[href="#cities"]').addClass 'nav-underline'
+    return
+  offset: '10%')
+
 # Scroll on buttons
 $('.js--btn-to-plans').click ->
   $('html, body').animate { scrollTop: $('.js--section-plans').offset().top }, 1000
