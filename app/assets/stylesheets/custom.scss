@@ -468,6 +468,20 @@ h3 {
 .plan {
   background-color: #fff;
   height: 100%;
+  
+  &:first-child {
+    .plan-kind {
+      background-color: #e67e22;
+      color: #fff;
+      opacity: 0.8;
+    }
+    
+    .plan-money {
+      h1, span {
+       color: #fff; 
+      }
+    }
+  }
 }
 
 .plan-kind {
